@@ -1,0 +1,13 @@
+{
+  "name": "benchmarks",
+  "packageManager": "yarn@4.3.1",
+  "dependencies": {
+    "guardia": "workspace:^",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4",
+    "@types/lodash-es": "^4"
+  }
+}

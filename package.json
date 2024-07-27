@@ -1,10 +1,14 @@
 {
-  "name": "esecure",
+  "name": "guardia",
   "version": "1.0.0",
   "packageManager": "yarn@4.3.1",
   "workspaces": [
-    "src/*"
+    "src",
+    "benchmarks"
   ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "devDependencies": {
     "@babel/core": "^7.24.9",
     "@babel/preset-env": "^7.24.8",
@@ -26,6 +30,7 @@
     "vitest": "^2.0.4"
   },
   "scripts": {
-    "test": "vitest run --coverage --typecheck"
+    "test": "vitest run --coverage --typecheck",
+    "bench": "vitest bench"
   }
 }
