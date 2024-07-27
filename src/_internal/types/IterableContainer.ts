@@ -1,1 +1,1 @@
-export type IterableContainer = unknown[] | Readonly<[]>;
+export type IterableContainer = unknown[] | Readonly<unknown[]>;
