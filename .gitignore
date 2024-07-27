@@ -2,7 +2,6 @@
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
-!.yarn/sdks
 !.yarn/versions
 
 # Swap the comments on the following lines if you wish to use zero-installs
@@ -11,3 +10,12 @@
 
 #!.yarn/cache
 .pnp.*
+
+# tsconfig
+.tsbuildinfo
+
+# node_modules
+node_modules
+
+# coverage
+coverage
