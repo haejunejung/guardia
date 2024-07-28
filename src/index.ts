@@ -1,1 +1,2 @@
-export * from './array/index';
+export * from './function';
+export * from './helper';
