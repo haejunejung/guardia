@@ -1,13 +1,33 @@
 import { describe, bench } from 'vitest';
 import { isArray as isArrayGuardia } from 'guardia';
 import { isArray as isArrayLodash } from 'lodash';
+import { isArray as isArrayUnderscore } from 'underscore';
+import { largeArray, smallArray } from './_internal';
 
-describe('isArray', () => {
+describe('isArray, small array', () => {
   bench('guardia/isArray', () => {
-    isArrayGuardia([1, 2, 3]);
+    isArrayGuardia(smallArray);
   });
 
   bench('lodash/isArray', () => {
-    isArrayLodash([1, 2, 3]);
+    isArrayLodash(smallArray);
+  });
+
+  bench('underscore/isArray', () => {
+    isArrayUnderscore(smallArray);
+  });
+});
+
+describe('isArray, large array', () => {
+  bench('guardia/isArray', () => {
+    isArrayGuardia(largeArray);
+  });
+
+  bench('lodash/isArray', () => {
+    isArrayLodash(largeArray);
+  });
+
+  bench('underscore/isArray', () => {
+    isArrayUnderscore(largeArray);
   });
 });

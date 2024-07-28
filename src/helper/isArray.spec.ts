@@ -28,12 +28,12 @@ describe('isArray', () => {
 
     const array1 = [1, '2', new Set(), [1, 2, 3]];
     const filteredArray1 = array1.filter(isArray);
-    expect(filteredArray1).toStrictEqual([1, 2, 3]);
+    expect(filteredArray1).toStrictEqual([[1, 2, 3]]);
     expectTypeOf(filteredArray1).toEqualTypeOf<number[][]>();
 
     const array2 = [1, '2', new Set(), [1, 2, 3] as const];
     const filteredArray2 = array2.filter(isArray);
-    expect(filteredArray2).toStrictEqual([1, 2, 3]);
+    expect(filteredArray2).toStrictEqual([[1, 2, 3]]);
     expectTypeOf(filteredArray2).toEqualTypeOf<Array<readonly [1, 2, 3]>>();
   });
 });
