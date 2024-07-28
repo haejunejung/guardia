@@ -4,10 +4,12 @@
   "dependencies": {
     "guardia": "workspace:^",
     "lodash": "^4.17.21",
-    "lodash-es": "^4.17.21"
+    "lodash-es": "^4.17.21",
+    "underscore": "^1.13.7"
   },
   "devDependencies": {
     "@types/lodash": "^4",
-    "@types/lodash-es": "^4"
+    "@types/lodash-es": "^4",
+    "@types/underscore": "^1.11.15"
   }
 }
