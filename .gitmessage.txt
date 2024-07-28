@@ -11,8 +11,8 @@
 # CHORE : Changes to something
 ################
 
-# Write the title in the format <type> : <title>" in the line below
-# For example: ✨ feat : Add isArray function
+# Write the title in the format <type>(issue) : <title>" in the line below
+# For example: ✨ feat(isArray) : Add isArray function
 #✨ FEAT   : 
 #🐛 FIX    : 
 #📝 DOCS   : 
