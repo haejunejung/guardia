@@ -1,8 +1,9 @@
 /**
  * `isArray` checks whether the provided value is an array.
  *
- * @param value - The value to check.
- * @returns - Returns `true` if the provided value is an array, otherwise returns `false`.
+ * @template T - The type of value.
+ * @param {T} value - The value to check.
+ * @returns {boolean} - Returns `true` if the provided value is an array, otherwise returns `false`.
  * @example
  * const array = [1, 2, 3];
  * isArray(array) // true
