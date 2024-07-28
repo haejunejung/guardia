@@ -5,29 +5,29 @@ import { isArray as isArrayUnderscore } from 'underscore';
 import { largeArray, smallArray } from './_internal';
 
 describe('isArray, small array', () => {
-  bench('guardia/isArray, small array', () => {
+  bench('guardia/isArray', () => {
     isArrayGuardia(smallArray);
   });
 
-  bench('lodash/isArray, small array', () => {
+  bench('lodash/isArray', () => {
     isArrayLodash(smallArray);
   });
 
-  bench('underscore/isArray, small array', () => {
+  bench('underscore/isArray', () => {
     isArrayUnderscore(smallArray);
   });
 });
 
 describe('isArray, large array', () => {
-  bench('guardia/isArray, large array', () => {
+  bench('guardia/isArray', () => {
     isArrayGuardia(largeArray);
   });
 
-  bench('lodash/isArray, large array', () => {
+  bench('lodash/isArray', () => {
     isArrayLodash(largeArray);
   });
 
-  bench('underscore/isArray, large array', () => {
+  bench('underscore/isArray', () => {
     isArrayUnderscore(largeArray);
   });
 });
