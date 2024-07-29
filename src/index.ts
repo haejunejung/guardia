@@ -1,2 +1,2 @@
 export * from './function';
-export * from './helper';
+export * from './predicate';
