@@ -6,7 +6,7 @@ describe('isArray', () => {
     expect(isArray([1, 2, 3])).toBeTruthy();
     expect(isArray([1, '2', true])).toBeTruthy();
     expect(isArray([])).toBeTruthy();
-    expect(isArray(new Array())).toBeTruthy();
+    expect(isArray([])).toBeTruthy();
     expect(isArray(Array.prototype)).toBeTruthy();
   });
 

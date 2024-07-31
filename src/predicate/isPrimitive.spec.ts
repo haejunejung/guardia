@@ -17,7 +17,7 @@ describe('isPrimitive', () => {
     expect(isPrimitive(new Date())).toBeFalsy();
     expect(isPrimitive(new Error())).toBeFalsy();
     expect(isPrimitive(new Object())).toBeFalsy();
-    expect(isPrimitive(new Array())).toBeFalsy();
+    expect(isPrimitive([])).toBeFalsy();
     expect(isPrimitive({})).toBeFalsy();
     expect(isPrimitive([])).toBeFalsy();
     expect(isPrimitive(new Set())).toBeFalsy();
