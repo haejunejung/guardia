@@ -3,8 +3,8 @@
  * The `callback` is invokes with three arguments: (value, index, array).
  *
  * @template T - The type of elements in the array.
- * @param {ReadonlyArray<T>} array - The array to iterate over.
- * @param {(value: T, index: number, array: ReadonlyArray<T>)} callback - The function invoked per iteration.
+ * @param {readonly T[]} array - The array to iterate over.
+ * @param {(value: T, index: number, array: readonly T[])} callback - The function invoked per iteration.
  * @returns {void}
  * @example
  * const exampleArray = [1, 2, 3];
@@ -24,8 +24,8 @@
  */
 
 export const forEach = <T>(
-  array: ReadonlyArray<T>,
-  callback: (value: T, index: number, array: ReadonlyArray<T>) => void
+  array: readonly T[],
+  callback: (value: T, index: number, array: readonly T[]) => void
 ): void => {
   for (let i = 0; i < array.length; i++) {
     callback(array[i], i, array);

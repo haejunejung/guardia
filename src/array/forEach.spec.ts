@@ -31,14 +31,14 @@ describe('forEach', () => {
     forEach(array1, (element, index, array) => {
       expectTypeOf(element).toBeNumber();
       expectTypeOf(index).toBeNumber();
-      expectTypeOf(array).toEqualTypeOf<ReadonlyArray<number>>();
+      expectTypeOf(array).toEqualTypeOf<readonly number[]>();
     });
 
     const array2 = [1, 2, 3] as const;
     forEach(array2, (element, index, arr) => {
       expectTypeOf(element).toEqualTypeOf<1 | 2 | 3>();
       expectTypeOf(index).toBeNumber();
-      expectTypeOf(arr).toEqualTypeOf<readonly (1 | 2 | 3)[]>();
+      expectTypeOf(arr).toEqualTypeOf<ReadonlyArray<1 | 2 | 3>>();
     });
   });
 });

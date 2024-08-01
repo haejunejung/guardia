@@ -11,6 +11,6 @@
  * const nonArray = {'0': 0, '1': 1};
  * isArray(nonArray) // false
  */
-export const isArray = <T>(value: T): value is Extract<T, ReadonlyArray<unknown>> => {
+export const isArray = <T>(value: T): value is Extract<T, readonly unknown[]> => {
   return Array.isArray(value);
 };

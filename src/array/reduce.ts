@@ -8,8 +8,8 @@
  *
  * @template T - The type of elements in the input array.
  * @template U - The type of elements in the output array.
- * @param {ReadonlyArray<T>} array - The array to iterate over.
- * @param {(previousValue: U, currentValue: T, currentIndex: number, array: ReadonlyArray<T>)} reducer
+ * @param {readonly T[]} array - The array to iterate over.
+ * @param {(previousValue: U, currentValue: T, currentIndex: number, array: readonly T[])} reducer
  * The function to execute on each element, taking the accumulator and the current element as arguments.
  * @param {U} initialValue - The initial value to use as the first argument to the first call of the reducer.
  * @returns {U} - The final result after all elements have been processed by the reducer.
@@ -23,8 +23,8 @@
  */
 
 export function reduce<T, U>(
-  array: ReadonlyArray<T>,
-  reducer: (previousValue: U, currentValue: T, currentIndex: number, array: ReadonlyArray<T>) => U,
+  array: readonly T[],
+  reducer: (previousValue: U, currentValue: T, currentIndex: number, array: readonly T[]) => U,
   initialValue: U
 ): U {
   let previousValue = initialValue;
